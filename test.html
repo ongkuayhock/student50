@@ -5,9 +5,14 @@
 		<h1> Header line 1</h1>
 		<h3> Header line 3 </h3>
 		<style>
-			@media print{
-				.screen-only {
-					display: none;
+			@media (min-width: 800px ){
+				body{
+					background-color: red;
+				}
+			}
+			@media (max-width: 799px){
+				body{
+					background-color: blue;
 				}
 			}
 		</style>
