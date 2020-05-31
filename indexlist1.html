@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Flask Web page </title>
+        <h1 style=color:blue ;> Display from Flask </h1>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+	<body>
+        <h3> List of Names </h3>
+        {% for name in names %}
+            <li> {{ name }}</li>
+        {% endfor %}
+	</body>
+</html>
