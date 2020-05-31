@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title> Fomr Website </title>
+    </head>
+    <style>
+        div{
+            color: blue;
+            font-size: 50px;
+            }
+        body{
+            color: red;
+            font-size: 30px;
+        }
+        input[type=text]{
+            background-color:yellow;
+        }
+    </style>
+    <form>
+        <div>
+            <input name="name" type="text" placeholder="Name">
+            <input name="password" type="password" placeholder="Password">
+        </div>
+        <h6> Your Favorite Color</h6>
+        <div>
+            <input name="color" type="radio" value="red" > red
+            <input name="color" type="radio" value="yellow" > yellow
+            <input name="color" type="radio" value="blue" > blue
+        </div>
+        <div>
+            <input name="country" list="countriesl" placeholder="Country">
+            <datalist id="countriesl">
+                <option value="Singapore">
+                <option value="Malaysia">
+                <option value="London">
+        </div>
+    </form>
+</html>
