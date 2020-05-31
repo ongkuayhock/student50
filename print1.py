@@ -1,39 +1,19 @@
-name = input("Enter your name ==)")
-age = input("Enter your age ==)")
-print(f"Hello, {name}! and your age is {age}")
+# Simple program
+#
 
-### Python list - good pratice to have similar data characteristics - not necessary to be same  
-Alist = ['Apple', 'Orange', 'Grape']
-print("The list ", Alist )
+def summ (x):
+    summ = 0
+    for i in range(0,x+1):
+        summ += i
+    return(summ)
 
-for i in range(5):
-    print(i)
-
-namesl = ["Charles", "Charlotte", "Charlene"]
-for i in namesl:
-    print(i)
-
-### set in python - unique list of items, no orders in particular
-oneset = set()
-oneset.add(1)
-oneset.add(3)
-oneset.add(4)
-oneset.add(3)
-print(oneset)
-
-### dictionary - set of records with key and values
-ages = {"Charles":26, "Charlene": 24, "Charlotte": 22 }
-print(ages)
-print(ages["Charles"])
-
-### function in Python
-### from function-program-file import function-name
-def insquare (x):
-    return(x * x)
-
-for i in range(5):
-    print(f"Number {i} square is {insquare(i)}")
-
-from functions import square
-print(f"Number 121 square is {square(121)}")
+inp1 = input("Please Enter a numnber ")
+inp2 = int(inp1)
+if inp2 > 50:
+    print("That is a high number")
+else:
+    print("That is a low number")
+    
+print( "Your number is : %s" % inp1)
+print( "The sum is %s " % summ(inp2))
 
